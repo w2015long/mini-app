@@ -1,0 +1,2 @@
+# mini-app
+init miniprogram
