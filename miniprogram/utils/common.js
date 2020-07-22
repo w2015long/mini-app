@@ -1,5 +1,5 @@
 
-function base() {};
+function Common() {};
 
 var _ = require('./underscore.js');
 var _c = require('./config.js');
@@ -35,8 +35,8 @@ Date.prototype.Format = function(fmt) {
     return fmt;
 };
 
-base.prototype = {
-
+Common.prototype = {
+    constructor: Common,
     /**
      * 数据管理器 dm = data manager
      */
@@ -1558,5 +1558,4 @@ base.prototype = {
 };
 
 
-base.prototype.constructor = base;
-module.exports = new base();
+module.exports = new Common();
