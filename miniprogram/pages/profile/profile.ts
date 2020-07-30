@@ -40,9 +40,9 @@ Page({
     isDaytime: true,
   },
 
-  bindChange(e) {
+  bindChange(e: any) {
     const val = e.detail.value
-    this.setData({
+    this.setData!({
       year: this.data.years[val[0]],
       month: this.data.months[val[1]],
       day: this.data.days[val[2]],

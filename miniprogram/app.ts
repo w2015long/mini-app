@@ -8,7 +8,6 @@ export interface IMyApp {
 
 App<IMyApp>({
   /** 生命周期回调—监听小程序初始化
-   *
    * 小程序初始化完成时触发，全局只触发一次。
    */
   onLaunch() {
