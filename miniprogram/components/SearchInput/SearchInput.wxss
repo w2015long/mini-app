@@ -1,0 +1,18 @@
+/* components/SearchInput/SearchInput.wxss */
+.search-wrap {
+  width: 100vw;
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+
+.search-wrap navigator {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}

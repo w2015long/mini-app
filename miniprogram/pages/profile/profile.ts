@@ -1,8 +1,7 @@
 // pages/profile/profile.js
 //获取应用实例
-import { IMyApp } from '../../app'
-
-const app = getApp<IMyApp>();
+// import { IMyApp } from '../../app'
+// const app = getApp<IMyApp>();
 
 const date = new Date()
 const years = []
