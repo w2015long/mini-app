@@ -2,4 +2,29 @@
 <view class="container">
     <!-- 搜索框 开始 -->
     <SearchInput></SearchInput>
+    <view class="swiper-box">
+        <swiper autoplay indicator-dots circular>
+            <swiper-item
+                    wx:for="{{swiperList}}"
+                    wx:key="goods_id"
+
+            >
+                <navigator url="{{item.navigator_url}}">
+                    <image mode="widthFix" src="{{item.image_src}}"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+      <!-- 导航 开始 -->
+  <view class="index_cate">
+    <navigator 
+    wx:for="{{categories}}"
+    wx:key="name"
+    url="/pages/category/index"
+    open-type="switchTab"
+    >
+    <image mode="widthFix" src="{{item.image_src}}" ></image>
+  </navigator>
+  </view>
+  <!-- 导航 结束 -->
 </view>
