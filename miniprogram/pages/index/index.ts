@@ -10,11 +10,13 @@ Page({
         swiperList: [],
         // 导航 数组
         categories: [],
+        floorList: [],
     },
     //事件处理函数
     onLoad() {
         this.getSwiperList();
         this.getNavigatorList();
+        this.getFloorList();
     },
     /**
     * 生命周期函数--监听页面初次渲染完成
@@ -34,6 +36,13 @@ Page({
         const result = await request({ url: '/home/catitems' });
         this.setData!({
             categories: result,
+        })
+    },
+    // 获取楼层数据
+    async getFloorList(){
+        const result = await request({ url: '/home/floordata' });
+        this.setData!({
+            floorList: result,
         })
     },
 })
