@@ -19,6 +19,7 @@
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
+		"scopeDataCheck": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -29,7 +30,8 @@
 		},
 		"useIsolateContext": true,
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"compileHotReLoad": false
 	},
 	"appid": "wx2e17302b98cb8ad6",
 	"simulatorType": "wechat",
