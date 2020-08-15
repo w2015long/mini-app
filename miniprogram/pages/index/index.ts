@@ -1,9 +1,8 @@
 //index.js
 //获取应用实例
-import { IMyApp } from '../../app';
+// import { IMyApp } from '../../app';
 import { request } from '../../utils/request';
-const app = getApp<IMyApp>();
-
+// const app = getApp<IMyApp>();
 Page({
     data: {
         // 轮播图数组
