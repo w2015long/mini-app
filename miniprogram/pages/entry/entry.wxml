@@ -1,0 +1,11 @@
+<!--pages/entry/entry.wxml-->
+<view class="container">
+  <view
+    class="card {{slectIndex === item.id ? 'isActive' : ''}}"
+    wx:for="{{albumList}}"
+    wx:key="id"
+    data-index="{{index}}"
+    bindtap="handleItemTap">
+    <image class="img" mode="widthFix" src="{{item.imgUrl}}"></image>
+  </view>
+</view>

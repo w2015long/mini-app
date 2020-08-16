@@ -1,0 +1,12 @@
+page{
+  padding-bottom: 100rpx;
+}
+.chat-bgColor {
+  background-color: #95EC69;
+}
+.cu-chat .cu-info.margin-0 {
+  margin: 5rpx auto;
+}
+.cu-chat .cu-item.chat-panel {
+  padding: 12rpx 30rpx 20rpx;
+}

@@ -5,7 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    chatList: [
+      {
+        id: 0, 
+        avatar: 'https://s1.ax1x.com/2020/08/16/dVFW8O.jpg',
+        name: 'JasonWang',
+        message: '[图片]',
+        date: '18:32'
+      },
+      {
+        id: 1, 
+        avatar: 'https://s1.ax1x.com/2020/08/16/dVi9yj.jpg',
+        name: '科室-护',
+        message: '好的',
+        date: '14:06'
+      },
+      {
+        id: 2, 
+        avatar: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3526287864,2288992690&fm=26&gp=0.jpg',
+        name: '张雅',
+        message: '一会到家',
+        date: '16:12'
+      },
+    ],
+  },
+  goChat (e) {
+    wx.navigateTo({
+      url: '../chat/chat'
+    });
   },
 
   /**

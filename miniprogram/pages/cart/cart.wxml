@@ -1,2 +1,27 @@
-<!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<!-- pages/cart/cart.wxml -->
+<scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
+    <cu-custom bgColor="bg-gray" isBack="{{true}}">
+        <view slot="backText">WeChat</view>
+        <!-- <view slot="content">聊天</view> -->
+    </cu-custom>
+    <view
+        bindtap="goChat"
+        class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+        <view
+            wx:for="{{chatList}}"
+            wx:key="id"  
+            class="cu-item pad {{menuArrow?'arrow':''}}"
+        >
+            <view class="content">
+                <image src="{{item.avatar}}" class="cu-avatar sm" mode="aspectFit"></image>
+                <view class="chat-content">
+                    <view class="text-black">{{item.name}}</view>
+                    <view class="text-gray">{{item.message}}</view>
+                </view>
+                <view class="action float-right">
+                    <text class="text-grey text-sm">{{item.date}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

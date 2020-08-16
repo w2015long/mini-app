@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
 @import "styles/iconfont.wxss";
 /* 在微信小程序中 不支持 通配符 '*' */
 page,view,text,swiper,swiper-item,image,navigator{
@@ -11,4 +13,7 @@ page {
   /*定义变量*/
   --themeColor: #108ee9;
   font-size: 28rpx;
+}
+.scrollPage {
+  height: 100vh;
 }

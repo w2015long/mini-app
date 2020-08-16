@@ -2,30 +2,25 @@
 <view class="container">
     <!-- 搜索框 开始 -->
     <SearchInput></SearchInput>
-    <view class="swiper-box">
-        <swiper autoplay indicator-dots circular>
-            <swiper-item
-                    wx:for="{{swiperList}}"
-                    wx:key="goods_id"
-
-            >
-                <navigator url="{{item.navigator_url}}">
-                    <image mode="widthFix" src="{{item.image_src}}"></image>
-                </navigator>
-            </swiper-item>
-        </swiper>
-    </view>
+    <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+      <swiper-item wx:for="{{swiperList}}" wx:key="id" class="{{cardCur==index?'cur':''}}">
+        <view class="swiper-item">
+          <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+          <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+        </view>
+      </swiper-item>
+    </swiper>
       <!-- 导航 开始 -->
-  <view class="index_cate">
-    <navigator 
-    wx:for="{{categories}}"
-    wx:key="name"
-    url="/pages/category/index"
-    open-type="switchTab"
-    >
-    <image mode="widthFix" src="{{item.image_src}}" ></image>
-  </navigator>
-  </view>
+    <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+      <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}">
+        <view class="cuIcon-{{item.icon}} text-{{item.color}}">
+          <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+            <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
+          </view>
+        </view>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
   <!-- 导航 结束 -->
     <!-- 楼层 开始 -->
   <view class="index_floor">
