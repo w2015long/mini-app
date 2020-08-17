@@ -1,0 +1,95 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">时间轴</view>
+</cu-custom>
+<view class="cu-timeline">
+    <view class="cu-time">9-13</view>
+    <view class="cu-item cur cuIcon-noticefill">
+        <view class="content bg-green shadow-blur">
+            <text>21:22</text>
+            互加微信开始了解
+        </view>
+    </view>
+    <view class="cu-time">10-02</view>
+    <view class="cu-item  cuIcon-attentionforbidfill">
+        <view class="content bg-red shadow-blur">第一次见面，第一次尬聊</view>
+    </view>
+    <view class="cu-item text-grey cuIcon-evaluate_fill">
+        <view class="content bg-grey shadow-blur">这是第一次，与你走这么近，一起看电影，一起吃晚餐</view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="bg-blue content">
+            <text>第二天</text>
+            一起去游玩，晕车上车为你买水，嗯心真大。。。当天我很开心不知道你开心不，看你难受的样子，
+      要了杯常温的星巴克也没了， 最后还是要了跟我一样的加冰的什么饮料忘了,车上你在睡觉 为你提前打开了吸管。坐在车上为你想要不要换车，打车直接回去，稍微好受点.
+        </view>
+    </view>
+</view>
+<view class="cu-timeline">
+    <view class="cu-time">10-25</view>
+    <view class="cu-item">
+        <view class="content">
+            <view class="cu-capsule radius">
+                <view class="cu-tag bg-cyan">上午</view>
+                <view class="cu-tag line-cyan">11:00</view>
+            </view>
+            <view class="margin-top">【互加qq】 为你利用午休时间修改PPT，紧赶慢赶在你下午去上班之前做出来</view>
+        </view>
+    </view>
+</view>
+<view class="cu-timeline">
+    <view class="cu-time">12-07</view>
+    <view class="cu-item cuIcon-attentionforbidfill">
+        <view class="content  radius bg-gradual-blue shadow-blur">
+            【12月7号】 大概得知今天是你生日，就口头祝你生日快乐!
+        </view>
+    </view>
+    <view class="cu-item cuIcon-time">
+        <view class="content  radius bg-gradual-green shadow-blur">后面陆续帮你报名护师考试，填写报名信息</view>
+    </view>
+    <view class="cu-time">07-01</view>
+    <view class="cu-item cuIcon-evaluate">
+        <view class="content  radius bg-brown">嗯，得知PPT问题为你打开了电脑一顿操作</view>
+    </view>
+    <view class="cu-item cuIcon-like">
+        <view class="content  radius bg-gradual-red">后面，得知你没有男朋友，哦豁小鹿乱撞</view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="bg-blue shadow-blur content">
+            <view class="cu-list menu-avatar radius">
+                <view class="cu-item">
+                    <view class="cu-avatar round lg" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+                    <view class="content">
+                        <view class="text-grey">JasonWang</view>
+                        <view class="text-gray text-sm">
+                            <text class="text-red"></text>
+                            人间皆安
+                        </view>
+                    </view>
+                    <view class="action">
+                        <view class="text-grey text-xs">22:20</view>
+                        <view class="cu-tag round bg-grey sm">5</view>
+                    </view>
+                </view>
+                <view class="cu-item">
+                    <view class="cu-avatar round lg" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);">
+                        <view class="cu-tag badge">99+</view>
+                    </view>
+                    <view class="content">
+                        <view class="text-grey">
+                            JasonWang
+                        </view>
+                        <view class="text-gray text-sm">
+                            <text class="text-red"></text>
+                            山河无恙
+                        </view>
+                    </view>
+                    <view class="action">
+                        <view class="text-grey text-xs">22:20</view>
+                        <text class="cuIcon-notice_forbid_fill text-gray"></text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

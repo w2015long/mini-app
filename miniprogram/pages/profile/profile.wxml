@@ -40,9 +40,9 @@
       </view>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+      <navigator class="content" url="/pages/timeline/timeline" hover-class="none">
         <image src="/images/logo.png" class="png" mode="aspectFit"></image>
-        <text class="text-grey">关于ColorUI</text>
+        <text class="text-grey">关于我们</text>
       </navigator>
     </view>
     <view class="cu-item arrow">

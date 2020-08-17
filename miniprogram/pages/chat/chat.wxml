@@ -11,8 +11,8 @@
       </view>
     </view>
   </view>
-   <view class="cu-info round margin-0">以上是打招呼内容</view>
-   <view class="cu-info round margin-0">你已添加JasonWang,现在可以聊天了</view>
+  <view class="cu-info round margin-0">以上是打招呼内容</view>
+  <view class="cu-info round margin-0">你已添加JasonWang,现在可以聊天了</view>
   <view class="cu-item chat-panel self">
     <view class="main">
       <view class="content chat-bg-green shadow">
@@ -38,7 +38,7 @@
       </view>
     </view>
   </view>
-    <view class="cu-item chat-panel self">
+  <view class="cu-item chat-panel self">
     <view class="main">
       <view class="content chat-bg-green shadow">
         <text>不要对我有非分之想</text>
@@ -46,51 +46,35 @@
     </view>
     <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFxMQ.jpg);"></view>
   </view>
-  <view class="cu-info">
-    <text class="cuIcon-roundclosefill text-red "></text>
-    对方拒绝了你的消息
-  </view>
-  <view class="cu-info">
-    对方开启了好友验证，你还不是他(她)的好友。请先发送好友验证请求，对方验证通过后，才能聊天。
-    <text class="text-blue">发送好友验证</text>
-  </view>
-  <view class="cu-item self">
+  <view class="cu-item chat-panel">
+    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
     <view class="main">
-      <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" class="radius" mode="widthFix"></image>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
-    <view class="date">13:23</view>
-  </view>
-  <view class="cu-item self">
-    <view class="main">
-      <view class="action text-bold text-grey">3"</view>
       <view class="content shadow">
-        <text class="cuIcon-sound text-xxl padding-right-xl"></text>
+        <text>其他没有想法，就是赖上你了</text>
       </view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
-    <view class="date">13:23</view>
   </view>
-  <view class="cu-item self">
+  <view class="cu-item chat-panel self">
     <view class="main">
-      <view class="action">
-        <text class="cuIcon-locationfill text-orange text-xxl"></text>
+      <view class="content chat-bg-green shadow">
+        <text>赖上我那你悬了</text>
       </view>
-      <view class="content shadow">喵星球，喵喵市</view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big107000.jpg);"></view>
-    <view class="date">13:23</view>
+    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFxMQ.jpg);"></view>
   </view>
-  <view class="cu-item">
-    <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big143004.jpg);"></view>
+  <view class="cu-item chat-panel">
+    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
     <view class="main">
-      <view class="content shadow">@#$^&**</view>
-      <view class="action text-grey">
-        <text class="cuIcon-warnfill text-red text-xxl"></text>
-        <text class="text-sm margin-left-sm">翻译错误</text>
+      <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2667809009,1060983955&fm=26&gp=0.jpg" class="radius" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="cu-item chat-panel">
+    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="main">
+      <view class="content shadow">
+        <text>别这样,我的热腾腾的心啊</text>
       </view>
     </view>
-    <view class="date">13:23</view>
   </view>
 </view>
 <view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">

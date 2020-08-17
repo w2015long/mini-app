@@ -7,7 +7,8 @@
     "pages/profile/profile",
     "pages/search/search",
     "pages/login/login",
-    "pages/chat/chat"
+    "pages/chat/chat",
+    "pages/timeline/timeline"
   ],
   "window": {
     "backgroundTextStyle": "light",

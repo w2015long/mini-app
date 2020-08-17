@@ -6,7 +6,7 @@
   background-color: var(--themeColor);
 }
 
-.search-wrap navigator {
+.search-wrap .search-nav {
   height: 100%;
   display: flex;
   justify-content: center;
