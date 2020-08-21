@@ -1,15 +1,25 @@
-export function formatTime(date: Date): string {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+export const handleStar = (str: string) => {
+  const num = Math.floor(+str / 2);
+  var arr = [];
+  for(var i = 0; i < 5; i++){
+    if(i < num){
+      arr.push(1)
+    }else{
+      arr.push(0)
+    }
+  }
+  return arr;
 }
 
-const formatNumber = (n: number) => {
-  const str = n.toString()
-  return str[1] ? str : '0' + str
+export function formatMovieList(data: any){
+  return data.map((item: any) => {
+    return {
+      coverImg: item.cover,
+      title: item.title,
+      stars: handleStar(item.rate),
+      score: item.rate
+    }
+  })
 }
+

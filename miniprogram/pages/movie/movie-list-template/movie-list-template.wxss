@@ -1,0 +1,21 @@
+@import '../movie-item-template/movie-item-template.wxss';
+
+.movie-list-wrap{
+  /* padding: 10px 15px 0 15px; */
+  margin-bottom: 20px;
+}
+.movie-list-wrap .head{
+  display: flex;
+  padding: 10px 10px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+  line-height: 1.6em;  
+  color: #333;
+  margin-bottom: 10px;
+}
+.movie-list-wrap .list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

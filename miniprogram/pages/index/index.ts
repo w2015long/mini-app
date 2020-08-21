@@ -2,7 +2,7 @@
 //获取应用实例
 // import { IMyApp } from '../../app';
 import { request } from '../../utils/request';
-// const app = getApp<IMyApp>();
+const app = getApp();
 Page({
     data: {
         cardCur: 0,
@@ -96,7 +96,7 @@ Page({
     onLoad() {
         this.towerSwiper('swiperList');
         // this.getSwiperList();
-        this.getNavigatorList();
+        // this.getNavigatorList();
         this.getFloorList();
     },
     /**
@@ -107,7 +107,8 @@ Page({
     // 获取轮播图数据
     async getSwiperList(){
         // /home/swiperdata
-        const result = await request({ url: '/home/swiperdata' });
+        const base = app.globalData.homeBaseUrl;
+        const result = await request({ url: base + '/home/swiperdata' });
         this.setData!({
             swiperList: result,
         })
@@ -121,9 +122,10 @@ Page({
     },
     // 获取楼层数据
     async getFloorList(){
-        const result = await request({ url: '/home/floordata' });
+      const base = app.globalData.homeBaseUrl;
+        const result = await request({ url: base + '/home/floordata' });
         this.setData!({
-            floorList: result,
+            floorList: result.message,
         })
     },
     DotStyle(e: any) {

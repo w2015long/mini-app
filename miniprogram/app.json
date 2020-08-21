@@ -8,7 +8,8 @@
     "pages/search/search",
     "pages/login/login",
     "pages/chat/chat",
-    "pages/timeline/timeline"
+    "pages/timeline/timeline",
+    "pages/movie/movie"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +30,7 @@
         "selectedIconPath": "icons/home-fill.png"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/movie/movie",
         "text": "分类",
         "iconPath": "icons/category.png",
         "selectedIconPath": "icons/category-fill.png"

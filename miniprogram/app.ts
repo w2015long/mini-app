@@ -12,11 +12,11 @@ App({
    */
   onLaunch() {
     // 展示本地存储能力
-    if (wx.cloud) {
-      wx.cloud.init({
-        traceUser: true
-      })
-    }
+    // if (wx.cloud) {
+    //   wx.cloud.init({
+    //     traceUser: true
+    //   })
+    // }
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;
@@ -30,7 +30,10 @@ App({
       }
     })
   },
+  // https://movie.douban.com/j/search_subjects?type=movie&tag=&page_limit=50&page_start=0
   globalData: {
+    movieBaseUrl:"https://movie.douban.com/j",
+    homeBaseUrl: 'https://api-hmugo-web.itheima.net/api/public/v1', 
     ColorList: [{
         title: '嫣红',
         name: 'red',

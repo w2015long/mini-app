@@ -22,14 +22,14 @@ export const request = (params: paramsType)=>{
 
 
     // 定义公共的url
-    const baseUrl="https://api-hmugo-web.itheima.net/api/public/v1";
+    // const baseUrl="https://api-hmugo-web.itheima.net/api/public/v1";
     return new Promise((resolve,reject)=>{
         wx.request({
             ...params,
             header:header,
-            url:baseUrl+params.url,
+            url: params.url,
             success:(result: any) => {
-                resolve(result.data.message);
+                resolve(result.data);
             },
             fail:(err)=>{
                 reject(err);
