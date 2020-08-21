@@ -1,7 +1,5 @@
 @import '../movie-item-template/movie-item-template.wxss';
-
 .movie-list-wrap{
-  /* padding: 10px 15px 0 15px; */
   margin-bottom: 20px;
 }
 .movie-list-wrap .head{
