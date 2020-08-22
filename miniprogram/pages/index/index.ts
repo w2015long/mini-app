@@ -9,31 +9,31 @@ Page({
         swiperList: [{
         id: 0,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrricJazpOYjAibalZ7WVpgQx2OWTfiaytp07G5dPSKo6wT7IYiaiaplyCvl9w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }, {
         id: 1,
             type: 'image',
-            url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
+            url: 'https://mmbiz.qpic.cn/mmbiz_jpg/nHfX2pletfWlEBcqrI0icqbwoWb3SPBTU06lwCo1aicNFOPkk5xZwRpy24MhlibO625n5VpddLVBpib8mNxTEeXCDA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1',
         }, {
         id: 2,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrribbIsJmAFLfUoQH1RicuNIl59fZteiaibwBgfDdyp7y0FCibaE9alicNqo1Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }, {
         id: 3,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrrlrhNj06Wjl9RdLUEFJ3AKfgsYVk3cEic6pd78tAG2SFKBZiaBjWvBdtw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }, {
         id: 4,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrricJazpOYjAibalZ7WVpgQx2OWTfiaytp07G5dPSKo6wT7IYiaiaplyCvl9w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }, {
         id: 5,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrr1cXuCMsbmOPmqOZW3By9V65uomYAhKSVsjGk5oSu23ptK3KTeib95Mg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }, {
         id: 6,
         type: 'image',
-        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
+        url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrrxe86J4ss3aHXdsL2oqooeokHcJrBdicXXcOsCbUKVrLmzS3cI8Adwhw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
         }],
         iconList: [{
           icon: 'cardboardfill',

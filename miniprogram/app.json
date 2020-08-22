@@ -9,7 +9,8 @@
     "pages/login/login",
     "pages/chat/chat",
     "pages/timeline/timeline",
-    "pages/movie/movie"
+    "pages/movie/movie",
+    "pages/movie/movieMore/movieMore"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -4,7 +4,7 @@
 <view class="cu-chat">
   <view class="cu-info round margin-0">2019年9月13日晚上21:23</view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <view class="content shadow">
         <text>我是二楼永强妈介绍王龙</text>
@@ -19,10 +19,10 @@
         <text>我是杨苗</text>
       </view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFxMQ.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{yang}});"></view>
   </view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <view class="content shadow">
         <text>啊哈 是你呀</text>
@@ -31,7 +31,7 @@
   </view>
   <view class="cu-info round">对方撤回一条消息!</view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <view class="content shadow">
         <text>下次一起欢乐谷约</text>
@@ -44,10 +44,10 @@
         <text>不要对我有非分之想</text>
       </view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFxMQ.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{yang}});"></view>
   </view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <view class="content shadow">
         <text>其他没有想法，就是赖上你了</text>
@@ -60,16 +60,16 @@
         <text>赖上我那你悬了</text>
       </view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFxMQ.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{yang}});"></view>
   </view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2667809009,1060983955&fm=26&gp=0.jpg" class="radius" mode="widthFix"></image>
     </view>
   </view>
   <view class="cu-item chat-panel">
-    <view class="cu-avatar radius" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+    <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
     <view class="main">
       <view class="content shadow">
         <text>别这样,我的热腾腾的心啊</text>

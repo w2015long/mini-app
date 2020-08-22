@@ -9,7 +9,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        animation: '',
+        name: 'shake'
     },
 
     /**
@@ -49,7 +50,7 @@ Page({
         this.setData!({
             comingData,
             comingTag: '最新',
-            comingType:'coming'
+            comingType: 'coming'
         })
     },
     async getTopMovie() {
@@ -64,15 +65,27 @@ Page({
         const top250Data = formatMovieList(result.subjects);
         this.setData!({
             top250Data,
-            top250Tag:'豆瓣高分',
-            top250Type:'top250'
+            top250Tag: '豆瓣高分',
+            top250Type: 'top250'
         })
     },
+    toggle(e: any) {
+        var anmiaton = e.currentTarget.dataset.class;
+        var that = this;
+        that.setData!({
+            animation: anmiaton
+        })
+        setTimeout(function () {
+            that.setData!({
+                animation: ''
+            })
+        }, 1000)
+    },
     bandleMore: function (ev: any) {
-        // console.log(ev.currentTarget.dataset.type);
+        console.log(ev.currentTarget.dataset.type);
         var type = ev.currentTarget.dataset.type;
         wx.navigateTo({
-            url: '/pages/movie/movie-more/movie-more?type=' + type,
+            url: '../movie/movieMore/movieMore?type=' + type,
         })
     }
 })

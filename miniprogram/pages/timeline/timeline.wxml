@@ -58,7 +58,7 @@
         <view class="bg-blue shadow-blur content">
             <view class="cu-list menu-avatar radius">
                 <view class="cu-item">
-                    <view class="cu-avatar round lg" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);"></view>
+                    <view class="cu-avatar round lg" style="background-image:url({{avatar}});"></view>
                     <view class="content">
                         <view class="text-grey">JasonWang</view>
                         <view class="text-gray text-sm">
@@ -72,7 +72,7 @@
                     </view>
                 </view>
                 <view class="cu-item">
-                    <view class="cu-avatar round lg" style="background-image:url(https://s1.ax1x.com/2020/08/16/dVFW8O.jpg);">
+                    <view class="cu-avatar round lg" style="background-image:url({{avatar}});">
                         <view class="cu-tag badge">99+</view>
                     </view>
                     <view class="content">

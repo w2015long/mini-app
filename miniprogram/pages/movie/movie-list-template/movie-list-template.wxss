@@ -4,13 +4,16 @@
 }
 .movie-list-wrap .head{
   display: flex;
-  padding: 10px 10px 0;
+  padding: 0px 10px;
   flex-direction: row;
   justify-content: space-between;
   font-size: 30rpx;
-  line-height: 1.6em;  
+  line-height: 2em;  
   color: #333;
   margin-bottom: 10px;
+}
+.color {
+  color: #0a71d8;
 }
 .movie-list-wrap .list{
   display: flex;

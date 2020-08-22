@@ -1,9 +1,12 @@
 <import src="../movie-item-template/movie-item-template.wxml" />
 <template name="movieListTemplate">
   <view class='movie-list-wrap'>
-    <view class='head'>
+    <view class="head shadow bg-white">
       <text class='tag'>{{tag}}</text>
-      <text class='cuIcon-right' bindtap='bandleMore' data-type="{{type}}"></text>
+      <text bindtap="bandleMore" data-type="{{type}}" class="color">
+        <text class=''>查看更多</text>
+        <text class='cuIcon-right'></text>
+      </text>
     </view>
     <view class='list'>
       <block wx:for="{{movies}}" wx:for-item="movie" wx:key='index'>

@@ -1,6 +1,6 @@
 <import src="./movie-list-template/movie-list-template.wxml" />
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-  <view slot="backText">返回</view>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+  <!-- <view slot="backText">返回</view> -->
   <view slot="content">豆瓣电影</view>
 </cu-custom>
 <view class='movie-wrap'>

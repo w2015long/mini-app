@@ -1,5 +1,8 @@
 <import src="../movie-item-template/movie-item-template" />
-
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">{{title}}</view>
+</cu-custom>
 <view class='movie-more-wrap'>
   <view class='list'>
     <block wx:for="{{movies}}" wx:for-item="movie" wx:key='index'>
