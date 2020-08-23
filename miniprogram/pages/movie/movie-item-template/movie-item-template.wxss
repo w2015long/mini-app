@@ -9,10 +9,11 @@
   height: 270rpx;
 }
 .movie-item-wrap .title{
-  padding: 2rpx;
+  /* padding: 2rpx; */
   font-size: 30rpx;
   font-weight: 600;
-  /* width: 220rpx; */
+  width: 220rpx;
+  line-height: 2em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

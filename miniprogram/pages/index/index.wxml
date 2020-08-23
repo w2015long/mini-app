@@ -1,50 +1,62 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-    <!-- 搜索框 开始 -->
-    <!-- <SearchInput></SearchInput> -->
-    <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
-      <swiper-item wx:for="{{swiperList}}" wx:key="id" class="{{cardCur==index?'cur':''}}">
-        <view class="swiper-item">
-          <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-          <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  <!-- 搜索框 开始 -->
+  <!-- <SearchInput></SearchInput> -->
+  <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+    <swiper-item wx:for="{{swiperList}}" wx:key="id" class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item">
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!-- 导航 开始 -->
+  <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+    <view class="cu-item" wx:for="{{iconList}}" wx:key="icon" wx:if="{{index<gridCol*2}}">
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}">
+        <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+          <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
         </view>
-      </swiper-item>
-    </swiper>
-      <!-- 导航 开始 -->
-    <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
-      <view class="cu-item" wx:for="{{iconList}}" wx:key="icon" wx:if="{{index<gridCol*2}}">
-        <view class="cuIcon-{{item.icon}} text-{{item.color}}">
-          <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
-            <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
+      </view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 导航 结束 -->
+  <!-- 楼层 开始 -->
+  <view class="nav-fixed shadow bg-gradual-green text-df">菜谱推荐</view>
+  <view class="foodWrap">
+    <view class="food-col">
+      <view class="food-item" wx:for="{{leftData}}" wx:key="id">
+        <view class="item-box">
+          <view class="item-img" style="background-image:url({{item.img}})"></view>
+          <view class="info">
+            <view class="title">{{item.title}}</view>
+            <view class="authorBox">
+              <view class="author">{{item.author.nickname}}</view>
+              <view class="view">
+                <text class="icon cuIcon-attention"></text>
+                <text class="count">{{item.viewed_amount}}</text>
+              </view>
+            </view>
           </view>
         </view>
-        <text>{{item.name}}</text>
       </view>
     </view>
-  <!-- 导航 结束 -->
-    <!-- 楼层 开始 -->
-  <view class="index_floor">
-    <view class="floor_group"
-    wx:for="{{floorList}}"
-    wx:for-item="itemTop"
-    wx:for-index="index1"
-    wx:key="floor_title"
-    >
-      <!-- 标题 -->
-      <view class="floor_title">
-        <image mode="widthFix" src="{{itemTop.floor_title.image_src}}"></image>
-      </view>
-      <!-- 内容 -->
-      <view class="floor_list">
-        <navigator
-        wx:for="{{itemTop.product_list}}"
-        wx:for-item="itemBottom"
-        wx:for-index="key"
-        wx:key="name"
-        url="{{itemBottom.navigator_url}}"
-        >
-        <image mode="{{key===0?'widthFix':'scaleToFill'}}" src="{{itemBottom.image_src}}"></image>
-      </navigator>
+    <view class="food-col">
+      <view class="food-item" wx:for="{{rightData}}" wx:key="id">
+        <view class="item-box">
+          <view class="item-img" style="background-image:url({{item.img}});"></view>
+          <view class="info">
+            <view class="title">{{item.title}}</view>
+            <view class="authorBox">
+              <view class="author">{{item.author.nickname}}</view>
+              <view class="view">
+                <text class="icon cuIcon-attention"></text>
+                <text class="count">{{item.viewed_amount}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
       </view>
     </view>
   </view>

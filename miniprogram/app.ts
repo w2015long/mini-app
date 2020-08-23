@@ -34,6 +34,7 @@ App({
   globalData: {
     movieBaseUrl:"https://movie.douban.com/j",
     homeBaseUrl: 'https://api-hmugo-web.itheima.net/api/public/v1', 
+    foodBaseUrl: 'https://m.meishij.net/ajax/index_search_new.php',
     ColorList: [{
         title: '嫣红',
         name: 'red',

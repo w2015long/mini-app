@@ -15,7 +15,7 @@ Page({
       },
       {
         id: 1, 
-        avatar: 'https://s1.ax1x.com/2020/08/16/dVi9yj.jpg',
+        avatar: 'https://st-cn.meishij.net/user/69/207/ns2801819_147937132568875.jpg',
         name: '科室-护',
         message: '好的',
         date: '14:06'
