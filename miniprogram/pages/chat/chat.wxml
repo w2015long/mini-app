@@ -1,7 +1,7 @@
 <cu-custom bgColor="bg-nav-bar" isBack="{{true}}">
   <view slot="backText">对方正在输入...</view>
 </cu-custom>
-<view class="cu-chat">
+<view class="cu-chat" id="chat">
   <view class="cu-info round margin-0">2019年9月13日晚上21:23</view>
   <view class="cu-item chat-panel">
     <view class="cu-avatar radius" style="background-image:url({{jason}});"></view>
@@ -37,6 +37,14 @@
         <text>下次一起欢乐谷约</text>
       </view>
     </view>
+  </view>
+    <view class="cu-item chat-panel self">
+    <view class="main">
+      <view class="content chat-bg-green shadow">
+        <text>欢乐谷我已经去了n多次了 不想再去了</text>
+      </view>
+    </view>
+    <view class="cu-avatar radius" style="background-image:url({{yang}});"></view>
   </view>
   <view class="cu-item chat-panel self">
     <view class="main">

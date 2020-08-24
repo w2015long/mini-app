@@ -6,7 +6,6 @@
   width: 100%;
 }
 .nav-fixed {
-  position: sticky;
   margin: 30rpx auto 20rpx;
   background-color: #fff;
   width: 100%;
@@ -14,6 +13,12 @@
   height: 80rpx;
   line-height: 80rpx;
   font-size: 36rpx;
+}
+.nav-fixed.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .foodWrap {
   margin: 0 12rpx;

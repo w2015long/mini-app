@@ -32,9 +32,9 @@
       },
       {
         "pagePath": "pages/movie/movie",
-        "text": "分类",
-        "iconPath": "icons/category.png",
-        "selectedIconPath": "icons/category-fill.png"
+        "text": "豆瓣",
+        "iconPath": "icons/movie.png",
+        "selectedIconPath": "icons/movie-fill.png"
       },
       {
         "pagePath": "pages/cart/cart",

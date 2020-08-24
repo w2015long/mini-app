@@ -10,6 +10,16 @@ Page({
     starCount: 0,
     forksCount: 0,
     visitTotal: 0,
+    slideBarList: [
+      { id: 0, text: '爱' },
+      { id: 1, text: '心' },
+      { id: 2, text: '1' },
+      { id: 3, text: '3' },
+      { id: 4, text: '1' },
+      { id: 5, text: '4' },
+      { id: 6, text: '连' },
+      { id: 7, text: '击' },
+    ],
   },
   onShow(){
     this.getUserInfo();
@@ -34,8 +44,8 @@ Page({
       } else {
         that.setData!({
           starCount: that.coutNum(3000),
-          forksCount: that.coutNum(484),
-          visitTotal: that.coutNum(24000)
+          forksCount: that.coutNum(685),
+          visitTotal: that.coutNum(68000)
         })
       }
     }
@@ -60,5 +70,15 @@ Page({
       e = (e / 10000).toFixed(1) + 'W'
     }
     return e
+  },
+  showModal(e) {
+    this.setData!({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData!({
+      modalName: null
+    })
   },
 })

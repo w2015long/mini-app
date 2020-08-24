@@ -12,16 +12,17 @@
     </view>
     <view class="cu-time">10-02</view>
     <view class="cu-item  cuIcon-attentionforbidfill">
-        <view class="content bg-red shadow-blur">第一次见面，第一次尬聊</view>
+        <view class="content bg-red shadow-blur">第一次见面，第一次尬聊。哈哈...</view>
     </view>
     <view class="cu-item text-grey cuIcon-evaluate_fill">
-        <view class="content bg-grey shadow-blur">这是第一次，与你走这么近，一起看电影，一起吃晚餐</view>
+        <view class="content bg-grey shadow-blur">这是第一次，与你一起看电影，一起吃晚餐</view>
     </view>
     <view class="cu-item text-blue">
         <view class="bg-blue content">
             <text>第二天</text>
-            一起去游玩，晕车上车为你买水，嗯心真大。。。当天我很开心不知道你开心不，看你难受的样子，
-      要了杯常温的星巴克也没了， 最后还是要了跟我一样的加冰的什么饮料忘了,车上你在睡觉 为你提前打开了吸管。坐在车上为你想要不要换车，打车直接回去，稍微好受点.
+            一起去游玩，知道你晕车得到了一个橘子,en可以闻橘子皮，中午才到玩了一个下午，
+            打道回府,反正你当天身体不舒服,看你难受的样子，
+      到星巴克要了杯常温的拿铁咖啡？,不过好像没有了；最后还是要了跟我一样的加冰的什么饮料忘了,车上你在睡觉 为你提前打开了吸管。坐在车上为你想要不要换车，打车直接回去，稍微好受点.
         </view>
     </view>
 </view>

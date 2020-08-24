@@ -12,9 +12,10 @@ Page({
     count: 0,
     albumList: [
       { id: 0, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A08SAUmorAAHIfKCZNnE372.jpg' },
-      { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A1yOAQIZuAAXCDfbQmes925.jpg' },
-      { id: 2, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19Ajf-AeC_LAAuyr4urOBM957.jpg' },
-      // { id: 4, imgUrl: 'https://gd2.alicdn.com/imgextra/i2/2200717121882/O1CN01dxDBZ31Plzzx4CfiP_!!2200717121882-0-lubanu-s.jpg' },
+      { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19Ajf-AeC_LAAuyr4urOBM957.jpg' },
+      { id: 2, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/B2/wKgAC19DskmAAyj8AAFe7zgrXiY416.png' },
+      // { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A1yOAQIZuAAXCDfbQmes925.jpg' },
+
     ],
   },
   handleItemTap(e: any) {

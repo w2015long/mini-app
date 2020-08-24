@@ -1,4 +1,4 @@
-<scroll-view scroll-y class="scrollPage">
+<scroll-view scroll-y class="scrollPage DrawerPage {{modalName=='viewModal'?'show':''}}">
   <view class="UCenter-bg">
     <view wx:if="{{userinfo.avatarUrl}}">
         <image src="{{userinfo.avatarUrl}}" class="png" mode="widthFix"></image>
@@ -9,9 +9,6 @@
         class="cu-btn round bg-blue shadow"
         open-type="getUserInfo"
         bindgetuserinfo="handleGetUserInfo" >登录</button>
-    </view>
-    <view class="margin-top-sm">
-      <text>By:JasonWang</text>
     </view>
     <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
   </view>
@@ -41,18 +38,18 @@
     </view>
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/timeline/timeline" hover-class="none">
-        <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+        <text class="cuIcon-likefill text-red"></text>
         <text class="text-grey">关于我们</text>
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+      <navigator class="content" url="/pages/entry/entry" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">日志</text>
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <view class="content" bindtap="showQrcode">
+      <view class="content" bindtap="showModal" data-target="viewModal">
         <text class="cuIcon-appreciatefill text-red"></text>
         <text class="text-grey">赞赏支持</text>
       </view>
@@ -71,3 +68,17 @@
     </view>
   </view>
 </scroll-view>
+
+		<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+			<text class="cuIcon-pullright"></text>
+		</view>
+		<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+				<view class="cu-item arrow" wx:for="{{slideBarList}}" wx:key="index">
+					<view class="content text-center">
+						<text class="cuIcon-likefill text-red"></text>
+						<text class="text-grey">{{item.text}}</text>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
