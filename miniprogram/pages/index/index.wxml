@@ -2,7 +2,7 @@
 <view class="container">
   <!-- 搜索框 开始 -->
   <!-- <SearchInput></SearchInput> -->
-  <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
     <swiper-item wx:for="{{swiperList}}" wx:key="id" class="{{cardCur==index?'cur':''}}">
       <view class="swiper-item">
         <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
@@ -28,7 +28,7 @@
   </view>
   <!-- 导航 结束 -->
   <!-- 楼层 开始 -->
-  <view class="nav-fixed shadow bg-gradual-green text-df {{isFixedTop?'fixed':''}}"
+  <view class="nav-fixed shadow text-df {{isFixedTop?'fixed bg-gradual-blue':'bg-gradual-green'}}"
     id="navbar"
   >
     菜谱推荐
@@ -80,7 +80,7 @@
         <text class="cuIcon-close text-red"></text>
       </view>
     </view>
-    <view class="padding-xs">
+    <view class="padding-xs padding-center">
       这一列还没开发出来，你可以去探索其他地方，有惊奇哦
     </view>
     <view class="cu-bar bg-white justify-end">

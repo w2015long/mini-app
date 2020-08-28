@@ -1,5 +1,7 @@
 Page({
   data: {
+    messageList: [],
+    val:"",
     InputBottom: 0,
     jason: 'http://dfs2.520shq.com/group1/M00/07/AE/wKgAC19AitqAHTLCAACpDqui1Ks267.jpg',
     yang: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19Ai0CAe0XwAACPvN2bEFs373.jpg',
@@ -30,5 +32,22 @@ Page({
       InputBottom: 0,
       // scrollTop: this.data.height
     })
+  },
+  changeInput(e) {
+    // console.log(e)
+    this.setData({
+      val: e.detail.value
+    })
+  },
+  sendMsg() {
+    const v = this.data.val.trim();
+    const messageList = this.data.messageList;
+    if (v) {
+      messageList.push(v);
+      this.setData({
+        messageList,
+        val: '',
+      })
+    } 
   }
 })

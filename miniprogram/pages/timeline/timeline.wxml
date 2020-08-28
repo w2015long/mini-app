@@ -94,3 +94,17 @@
         </view>
     </view>
 </view>
+<view class="cu-timeline">
+    <view class="cu-time custom-text">未</view>
+    <view class="cu-time custom-text">完</view>
+    <view class="cu-time custom-text">待</view>
+    <view class="cu-time custom-text">续</view>
+    <view class="cu-item cur">
+        <view class="content bg-green shadow-blur">
+            流年笑掷，未来可期
+            <text class="text-red cuIcon-likefill"></text>
+            <text class="text-red cuIcon-likefill"></text>
+            <text class="text-red cuIcon-likefill"></text>
+        </view>
+    </view>
+</view>

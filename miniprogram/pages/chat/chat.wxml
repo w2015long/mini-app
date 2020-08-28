@@ -84,14 +84,30 @@
       </view>
     </view>
   </view>
+   <view class="cu-item chat-panel self" wx:for="{{messageList}}" wx:key="index">
+    <view class="main">
+      <view class="content chat-bg-green shadow">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="cu-avatar radius" style="background-image:url({{yang}});"></view>
+  </view>
 </view>
 <view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
   <view class="action">
     <text class="cuIcon-sound text-grey"></text>
   </view>
-  <input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <input
+    class="solid-bottom" 
+    bindfocus="InputFocus"
+    bindblur="InputBlur"
+    adjust-position="{{false}}"
+    focus="{{false}}" maxlength="300"
+    bindinput="changeInput"
+    value="{{val}}"
+    cursor-spacing="10"></input>
   <view class="action">
     <text class="cuIcon-emojifill text-grey"></text>
   </view>
-  <button class="cu-btn bg-green shadow">发送</button>
+  <button class="cu-btn bg-green shadow" bindtap="sendMsg">发送</button>
 </view>

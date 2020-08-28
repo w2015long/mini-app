@@ -17,7 +17,7 @@ Page({
     }, {
       id: 2,
       type: 'image',
-      url: 'https://mmbiz.qpic.cn/mmbiz_jpg/azXQmS1HA7kpibMXk8PNSU54U3AibKDYrribbIsJmAFLfUoQH1RicuNIl59fZteiaibwBgfDdyp7y0FCibaE9alicNqo1Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
+      url: 'http://mmbiz.qpic.cn/mmbiz_png/KMotugmMkE6VnZG7C80Z0mkgHCibhEccEfgN0cicFruiaL2llBGibsJoPPwP07sFkkiaMaLJ28tyicEvNBrUvnuWnDAw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1'
     }, {
       id: 3,
       type: 'image',
@@ -105,6 +105,9 @@ Page({
       isEnd: false,
     });
     this.getSeasonFood(this.data.currentPage);
+    this.setData!({
+      cusHeight: app.globalData.CustomBar
+    })
   },
   /**
    * 生命周期函数--监听页面显示

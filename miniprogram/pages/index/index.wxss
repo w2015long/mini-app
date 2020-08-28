@@ -13,12 +13,21 @@
   height: 80rpx;
   line-height: 80rpx;
   font-size: 36rpx;
+  transition: all 0.2s ease-in;
 }
 .nav-fixed.fixed {
   position: fixed;
-  top: 0;
+  top: 20rpx;
   left: 0;
   z-index: 100;
+  text-indent: 40rpx;
+  font-style: italic;
+  color: #fff;
+}
+.padding-center {
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  line-height: 2em;
 }
 .foodWrap {
   margin: 0 12rpx;
