@@ -11,10 +11,9 @@ Page({
     slectIndex: -1,
     count: 0,
     albumList: [
-      { id: 0, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A08SAUmorAAHIfKCZNnE372.jpg' },
-      { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19Ajf-AeC_LAAuyr4urOBM957.jpg' },
-      { id: 2, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/B2/wKgAC19DskmAAyj8AAFe7zgrXiY416.png' },
-      // { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A1yOAQIZuAAXCDfbQmes925.jpg' },
+      { id: 0, imgUrl: 'https://img.alicdn.com/imgextra/i2/6000000006053/O1CN01HffIb91uaK0uSiWvR_!!6000000006053-0-octopus.jpg' },
+      { id: 1, imgUrl: 'https://img.alicdn.com/imgextra/i4/6000000001122/O1CN01h1tZ5p1K9v0sfGQ4D_!!6000000001122-0-octopus.jpg' },
+      { id: 1, imgUrl: 'http://dfs2.520shq.com:80/group1/M00/07/AE/wKgAC19A1yOAQIZuAAXCDfbQmes925.jpg' },
 
     ],
   },
