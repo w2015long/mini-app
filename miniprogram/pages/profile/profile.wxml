@@ -37,18 +37,6 @@
       </view>
     </view>
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/timeline/timeline" hover-class="none">
-        <text class="cuIcon-likefill text-red"></text>
-        <text class="text-grey">关于我们</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class="content" url="/pages/entry/entry" hover-class="none">
-        <text class="cuIcon-formfill text-green"></text>
-        <text class="text-grey">照片墙</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
       <view class="content" bindtap="showModal" data-target="viewModal">
         <text class="cuIcon-appreciatefill text-red"></text>
         <text class="text-grey">赞赏支持</text>
